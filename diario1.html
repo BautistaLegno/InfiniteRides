@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/diario1.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosdiario/Honda CB500F.jpg" alt="Rojo"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Honda CB500F</h3> <br>  
+
+              <h2>U$D 16990</h2> <br>
+              <li>Posee un motor de 2 cilindros en línea. </li> <br> <br>
+              <li>Cilindrada: 471 cc.</li> <br> <br>
+              <li>Refrigeración líquida para un rendimiento óptimo. </li> <br> <br>
+              <li>Equipada con una transmisión de 6 velocidades</li> <br> <br>
+              <li>Sistema de frenos de disco, tanto en la rueda delantera como en la trasera </li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

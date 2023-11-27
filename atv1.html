@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/atv1.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosatv/Can-Am Renegade 1000 (1).png" alt="Rojo"></div>
+            <div class="carousel-item"><img src="img/motosatv/Can-Am Renegade 1000 (2).png" alt="Verde"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+            <div class="color-button green-button" onclick="cambiarImagen(1)"></div>
+
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Can-Am Renegade 1000</h3> <br>  
+
+              <h2>U$D 17700</h2> <br>
+              <li>Motor V-twin de 4 tiempos</li> <br> <br>
+              <li>Cilindrada: 976.3 cc</li> <br> <br>
+              <li>Chasis robusto diseñado para el rendimiento todoterreno </li> <br> <br>
+              <li>Sistema de frenos de disco en ambas ruedas</li> <br> <br>
+              <li>Equipada con neumáticos todoterreno para un agarre óptimo en terrenos variados</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/enduro7.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosenduro/Kawasaki KLX450R.jpg" alt="Rojo"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Kawasaki KLX450R</h3> <br>  
+
+              <h2>U$D 11000</h2> <br>
+              <li> Tiene un motor monocilíndrico de 4 tiempos con una cilindrada de 449.0 cc</li> <br> <br>
+              <li> La transmisión es de 5 velocidades con transmisión final por cadena</li> <br> <br>
+              <li> Inyección de combustible (DFI), cuerpo de acelerador Keihin de 1x44mm </li> <br> <br>
+              <li>La capacidad del tanque de combustible es de 8.0 Litros</li> <br> <br>
+              <li>Frenos delanteros y traseros a Disco</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

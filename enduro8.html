@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/enduro8.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosenduro/Sherco SEF-R 300 (1).jpg" alt="Rojo"></div>
+            <div class="carousel-item"><img src="img/motosenduro/Sherco SEF-R 300 (2).jpg" alt="Verde"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+            <div class="color-button green-button" onclick="cambiarImagen(1)"></div>
+
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Sherco SEF-R 300</h3> <br>  
+
+              <h2>U$D 11200</h2> <br>
+              <li> Tiene un motor monocilíndrico, 4 tiempos </li> <br> <br>
+              <li> Cilindrada: 303.66 cc</li> <br> <br>
+              <li> Sistema de combustible: Inyección electrónica digital Synerject </li> <br> <br>
+              <li>El peso en vacío es de 102 kg</li> <br> <br>
+              <li>El chasis es semi perimetral de acero</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

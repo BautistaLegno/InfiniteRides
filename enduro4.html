@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/enduro4.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosenduro/Beta 300 RR (1).png" alt="Rojo"></div>
+            <div class="carousel-item"><img src="img/motosenduro/Beta 300 RR (2).jpg" alt="Verde"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+            <div class="color-button green-button" onclick="cambiarImagen(1)"></div>
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Beta 300 RR</h3> <br>  
+
+              <h2>U$D 15500</h2> <br>
+              <li> La moto está equipada con un motor de cuatro tiempos </li> <br> <br>
+              <li> Posee un solo cilindro refrigerado por líquido de 292,30 cc</li> <br> <br>
+              <li> Tiene una transmisión de seis velocidades que ofrece una amplia gama de opciones de cambio </li> <br> <br>
+              <li>La suspensión delantera de la moto es una horquilla invertida KYB de 48 mm completamente ajustable</li> <br> <br>
+              <li>Cuenta con un sistema de escape de carbono completo que cumple con todos los requisitos de la EPA</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

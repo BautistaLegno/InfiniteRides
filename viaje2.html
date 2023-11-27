@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/viaje2.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosviaje/Harley-Davidson Electra Glide (1).jpg" alt="Rojo"></div>
+            <div class="carousel-item"><img src="img/motosviaje/Harley-Davidson Electra Glide (2).jpg" alt="Verde"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+            <div class="color-button green-button" onclick="cambiarImagen(1)"></div>
+
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Harley-Davidson Electra Glide</h3> <br>  
+
+              <h2>U$D 80000</h2> <br>
+              <li>Motor V-twin</li> <br> <br>
+              <li>Cilindrada:1,868 cc.</li> <br> <br>
+              <li>Sistema de refrigeración por aire </li> <br> <br>
+              <li>Transmisión manual de 6 velocidades</li> <br> <br>
+              <li>Chasis diseñado para el confort y la estabilidad en recorridos largos</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>

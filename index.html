@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a class="logo">InfiniteRides</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="moto.html">Motos</a></li>
+                <li><a href="moto.html#ATV">ATV</a></li>
+                <li><a href="info.html">Nosotros</a></li>
+                <li><a href="mailto:InfiniteRides@gmail.com?Subject=Interesado%20en%20el%20curso" id="Contacto"><g>Contacto</g></a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"  onclick="searchBtn()"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"  onclick="closeBtn()"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"  onclick="menuToggle()"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Buscar . . .">
+        </div>
+    </header>
+    <section class="slider">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../Consesionario/img/enduro.jpg" style="width:100%" height="600vh">
+            <a href="moto.html#Enduro"><button>MAS INFORMACION</button></a>
+        </div>
+        <div class="mySlides fade">
+            <img src="../Consesionario/img/viaje.jpg" style="width:100%" height="600vh">
+            <a href="moto.html#Viaje"><button>MAS INFORMACION</button></a>
+        </div>
+        <div class="mySlides fade">
+            <img src="../Consesionario/img/diario.jpg" style="width:100%" height="600vh">
+            <a href="moto.html#Diario"><button>MAS INFORMACION</button></a>
+        </div>
+        <div class="mySlides fade">
+            <img src="../Consesionario/img/cuatri.jpg" style="width:100%" height="600vh">
+            <a href="moto.html#ATV"><button>MAS INFORMACION</button></a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</section>
+    <section class="info" id="info">
+        <h4>¡Bienvenido a InfiniteRides!</h4>
+        <br>
+        <div class="infomedia">
+            <center>
+            Somos una concesionaria de motos que nació en el emocionante año 2020, en medio de desafíos y cambios sin precedentes. Nuestra pasión por las dos ruedas nos llevó a crear un espacio donde los amantes de las motocicletas pueden encontrar su compañera de aventuras perfecta.<br>
+            <br>
+            En InfiniteRides, no solo vendemos motos, sino que también creamos conexiones duraderas. Nuestro equipo está compuesto por expertos que conocen cada modelo y pueden asesorarte en tu búsqueda de la moto perfecta. Ya sea que estés buscando la adrenalina de una deportiva, la versatilidad de una de enduro o la eficiencia de una moto de viaje, tenemos la moto de tus sueños.<br>
+            <br>
+            Únete a nosotros en esta emocionante travesía. InfiniteRides es más que una concesionaria, es un destino para los amantes de las motos. ¡Descubre el infinito mundo de las motocicletas con nosotros!<br>
+            </center>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Compañia</h4>
+                    <ul class="menu" id="menu">
+                        <li><a href="info.html#sobrenosotros" onclick="irASeccion('sobrenosotros')">Sobre nosotros</a></li>
+                        <li><a href="info.html#servicios" onclick="irASeccion('servicios')">Servicios</a></li>
+                        <li><a href="info.html#politicasyprivacidad" onclick="irASeccion('politicasyprivacidad')">Politicas y privacidad</a></li>
+                        <li><a href="info.html#programadeafiliados" onclick="irASeccion('programadeafiliados')">Programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="info.html#comocomprar" onclick="irASeccion('comocomprar')">Como comprar</a></li>
+                        <li><a href="info.html#nuestrocatalogo" onclick="irASeccion('nuestrocatalogo')">Nuestro catalogo</a></li>
+                        <li><a href="info.html#garantias" onclick="irASeccion('garantias')">Garantias</a></li>
+                        <li><a href="info.html#entregas" onclick="irASeccion('entregas')">Entregas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Elige tu estilo</h4>
+                    <ul>
+                        <li><a href="moto.html#Enduro">Enduro</a></li>
+                        <li><a href="moto.html#Viaje">Viaje</a></li>
+                        <li><a href="moto.html#Diario">Diario</a></li>
+                        <li><a href="moto.html#ATV">ATV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes sociales</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../Consesionario/js/main.js"></script>
+</body>
+</html>

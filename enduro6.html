@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteRides</title>
+    <link rel="icon" href="../Consesionario/img/Logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="../Consesionario/css/enduro6.css">
+</head>
+<body>
+    <header>
+
+        <a href="moto.html" class="logo">Inicio</a>
+
+    </header>
+
+    
+
+    
+      
+      
+
+      <!-- Cuadrado con precio y descripcion -->
+
+      <section class="textoxd">
+        <div id="carousel-container">
+          <div id="carousel">
+            <!-- Agrega tus imágenes del carrusel aquí -->
+            <div class="carousel-item"><img src="img/motosenduro/Suzuki RMX450Z.png" alt="Rojo"></div>
+
+          </div>
+          <div class="button-container">
+            <!-- Botones de colores -->
+            <div class="color-button red-button" onclick="cambiarImagen(0)"></div>
+
+          </div>
+        </div>
+        <div class="escribir">
+          
+          <section class="home">
+            <div class="contenedor">
+              <h3>Suzuki RMX450Z</h3> <br>  
+
+              <h2>U$D 18000</h2> <br>
+              <li> Cuenta con un motor monocilíndrico de 4 tiempos y 449 cc de cilindrada</li> <br> <br>
+              <li> Nuevo sistema de admisión que cuenta con una apertura del filtro de aire 30% más grande</li> <br> <br>
+              <li> Cuenta con un chasis de doble cuna fabricado en aleación de aluminio, lo que contribuye a reducir el peso de la motocicleta</li> <br> <br>
+              <li>El Sistema de gestión del motor (EMS) ofrece dos mapas de pilotaje preconfigurados adaptados a diferentes terrenos y marchas seleccionadas</li> <br> <br>
+              <li>Tiene un perfil de leva revisado y un conducto de entrada modificado para aumentar la potencia en bajas y medias RPM</li>
+                
+              
+            </div>
+    
+        </section>
+      
+            </div>
+        </div>
+      </section>
+
+
+      
+      <script>
+        const carousel = document.getElementById('carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+      
+        function cambiarImagen(index) {
+          const offset = -index * 100 + '%';
+          carousel.style.transform = 'translateX(' + offset + ')';
+        }
+      </script>
+
+
+
+</body>
+</html>
