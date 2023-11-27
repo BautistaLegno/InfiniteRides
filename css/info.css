@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+}
+
+/*MENU--------------------------------------------------------------------------------------------------------------------------------------------*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 350px 15px 15px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 30px;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 -5px 0 0;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 0 0 0 20px;
+}
+header ul li a g::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #FF7517;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a g:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.menuToggle{
+    display: none;
+    margin: -40px;
+}
+#Contacto{
+    color: #FF7517;
+}
+/*INFORMACION---------------------------------------------------------------------------------------------------------*/
+.informacion{
+    display: flex;
+    margin-top: 80px;
+}
+.indice{
+    width: 20%;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.05);
+    margin: auto;
+    border-radius: 5px;
+}
+/*INFO-----------------------------------------------------------------------------------------------------------------*/
+.info{
+    width: 80%;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    position: relative;
+    line-height: 1.5em;
+}
+p{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+h1{
+    color: #FF7517;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+/*INDICE--------------------------------------------------------------------------------------------------------------*/
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   position: relative;  
+}
+.footer-col h4{
+	font-size: 25px;
+	color: #FF7517;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #FF7517;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 18px;
+    width: 200px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #24262b;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: black;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth; /* Transición suave al hacer scroll */
+}
+
+.informacion h1,
+.informacion p {
+    opacity: 0; /* Inicialmente, establece la opacidad a 0 para la animación de desvanecimiento */
+    transition: opacity 0.5s ease-in-out 0.3s; /* Transición suave de la opacidad */
+}
+
+.informacion h1.fade-in,
+.informacion p.fade-in {
+    opacity: 1; /* Cuando se añade la clase "fade-in", muestra la sección con opacidad 1 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        display: none;
+    }
+    .indice{
+        display: none;
+    }
+    .info{
+        margin-top: -80px;
+        width: 100%;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
